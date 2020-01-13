@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border-bottom: 1px groove black;
+    padding-bottom: 20px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.elenco{
+    width: 90%;
+    margin:0 auto;
+    padding:40px 0;
+
+}
+
+.quadrato{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin:5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+button{
+    height: 25px;
+    width: 80px;
+    line-height: 1;
+    padding: 5px 10px;
+}
+
+input{
+    height: 25px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: yellow;
+    opacity: 0.9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid red;
+    display: none;
+
+
+}
+
+.quadrato:hover .overlay{
+    display: flex;
+}
+
+.cerchio{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerchio:hover{
+    cursor: pointer;
+}
+
+.cerchio i{
+    color:red;
+    font-size: 50px;
+}
